@@ -157,7 +157,7 @@ public abstract class InkBot<T extends InkBotConfiguration>
     throws BotException
   {
     log.debug("===> \n session: {} context: {} messageText: {}",
-            session, context, messageText);
+            new Object[]{ session, context, messageText });
 
     CurrentResponse currentResponse = new CurrentResponse();
 
